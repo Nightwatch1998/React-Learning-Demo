@@ -16,7 +16,8 @@ const data = [
 class Retail extends Component {
   render() {
     // 接收search参数
-    const {id,title} = this.props.location.state
+    const {search} = this.props.location
+    const {id,title} = qs.parse(search.slice(1))
     // const {id, title} = this.props.match.params
     const findResult = data.find(msg=>msg.id === id);
     return (
