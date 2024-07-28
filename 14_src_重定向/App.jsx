@@ -17,6 +17,14 @@ class App extends Component {
         <div className="row">
           <div className="col-xs-2 col-xs-offset-2">
             <div className="list-group">
+              {/*原生html，靠<a>跳转不同页面*/}
+              {/*<a className="list-group-item" href="./about.html">About</a>*/}
+              {/*<a className="list-group-item active" href="./home.html">Home</a>*/}
+              
+              {/*在React中靠路由链接实现切换组件*/}
+              {/*<NavLink activeClassName="rong" className="list-group-item" to="/about">About</NavLink>*/}
+              {/*<NavLink activeClassName="rong" className="list-group-item" to="/home">Home</NavLink>*/}
+              
               {/*使用自己封装的导航栏*/}
               <MyNavLink to="/about">About</MyNavLink>
               <MyNavLink to="/home">Home</MyNavLink>
